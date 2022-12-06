@@ -1,19 +1,20 @@
-import '../styles/globals.css'
-import Header from '../components/Header'
+import "../styles/globals.css";
+import Header from "../components/Header";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+interface propsType {
+  children: React.ReactNode;
+}
+
+export default function RootLayout({children}: propsType) {
   return (
     <html>
       <head>
+        <title>Sonnys Website</title>
       </head>
-      <body>
+      <body className="">
         <Header />
-        {children}
+        <main className="px-6 py-2">{children}</main>
       </body>
     </html>
-  )
+  );
 }

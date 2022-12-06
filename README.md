@@ -30,6 +30,8 @@ This is a simple todo app that I coded to practice my next and tailwind skills, 
 ## :information_source: Features
 
 - [x] Uses the most new nextJS 13 features;
+- [x] Fetch an jsonplaceholder.com API to get todo list;
+- [x] Fetch an serpapi.com API to get word definition.
 
 ## :information_source: Technologies
 
@@ -86,8 +88,9 @@ $ npm install
 
 # Run the code in development mode
 $ npm run dev
-
 ```
+
+To be able to search for words, you should also create an account in `serpapi.com` and set your API KEY in the `.env.local` file, as is specified in `.env.local.example`.
 
 ---
 
